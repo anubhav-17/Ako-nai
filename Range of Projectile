@@ -1,0 +1,43 @@
+
+import random
+
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+
+comp_number = random.choice(numbers)
+
+user_number = int(input())
+
+
+if comp_number == user_number:
+
+    print(user_number, " is the correct answer! You won in first the guess!")
+
+else:
+    print(user_number, " is not the correct answer.")
+    print("")
+    
+    user_number2 = int(input())
+
+    if comp_number == user_number2:
+
+        print(user_number2, " is the correct answer! Cracked in the 2nd attempt.")
+
+    else:
+        print(user_number2, " is not the correct answer.")
+        print("")
+        
+        user_number3 = int(input())
+
+        if comp_number == user_number3:
+
+            print(user_number3, " is the correct answer! Cracked in the 3rd attempt.")
+
+        else:
+            print(user_number3, " is not the correct answer.")
+            print("")
+            print("You lose. The correct answer is ", comp_number)
+print("")
+
+print("Jaa pohr ge ita, ako honai prha. Aji metallurgy khini korba o lagbo.")
