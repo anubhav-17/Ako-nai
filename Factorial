@@ -1,0 +1,32 @@
+# Infinite factorial loop
+
+number = int(input())
+
+def my_func(number):
+    if number == 0:
+        return 1
+    else:
+        return number * my_func(number - 1)
+        
+str_number = str(number)
+str_result = str(my_func(number))
+
+
+print("The factorial of " + str_number + " is " + str_result)
+
+
+
+integer = int(my_func(number))
+    
+def my_func2(integer):
+    if integer == 0:
+        return 1
+    else:
+        return integer * my_func2((integer - 1))
+        
+str_number2 = str(integer)
+str_result2 = str(my_func2(integer))
+
+
+print("The factorial of " + str_number2 + " is " + str_result2)
+
