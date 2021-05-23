@@ -1,0 +1,15 @@
+
+import math
+
+sine = math.sin(math.radians(2 * int(input())))
+
+velocity = int(input())
+
+g = 10
+
+Range = (((velocity) ** 2) * sine) / g
+
+print("The Range of the particle is = ", Range, " metres or ", Range/1000, " kilometres.")
+
+
+
